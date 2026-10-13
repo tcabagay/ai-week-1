@@ -1,0 +1,110 @@
+.wp-block-multi-shot-interactivity-quiz-question {
+
+	.msiq-question {
+		font-size: 1.125rem;
+		font-weight: 600;
+		margin: 0 0 0.75rem;
+	}
+
+	.msiq-answers {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.msiq-answer {
+		padding: 0.75rem 1rem;
+		border: 1px solid #ddd;
+		border-radius: 4px;
+		margin-bottom: 0.5rem;
+		cursor: pointer;
+		transition: background-color 0.15s ease, border-color 0.15s ease;
+
+		&:hover {
+			background-color: #f6f7f7;
+		}
+
+		&:disabled,
+		&.is-selected {
+			cursor: default;
+		}
+
+		&.is-selected {
+			border-color: #2271b1;
+			background-color: #eff6ff;
+		}
+
+		&.is-correct {
+			border-color: #00a32a;
+			background-color: #edfaef;
+		}
+
+		&.is-wrong {
+			border-color: #d63638;
+			background-color: #fcf0f1;
+		}
+	}
+
+	.msiq-not-ready {
+		color: #757575;
+		font-style: italic;
+		padding: 1rem;
+		border: 1px dashed #ddd;
+		border-radius: 4px;
+	}
+
+	.msiq-sticky-bar {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: #fff;
+		border-top: 1px solid #ddd;
+		padding: 0.75rem 1rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		z-index: 1000;
+		box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
+
+		&.msiq-finished {
+			background: #f0f9ff;
+			border-color: #2271b1;
+		}
+	}
+
+	.msiq-bar-info {
+		display: flex;
+		flex-direction: column;
+		gap: 0.25rem;
+	}
+
+	.msiq-progress {
+		font-size: 0.9375rem;
+	}
+
+	.msiq-result-msg {
+		font-size: 1rem;
+		font-weight: 700;
+		color: #2271b1;
+	}
+
+	.msiq-hidden {
+		display: none;
+	}
+
+	.msiq-retry-btn {
+		padding: 0.4rem 1rem;
+		border: 1px solid #2271b1;
+		border-radius: 4px;
+		background: #2271b1;
+		color: #fff;
+		cursor: pointer;
+		font-size: 0.875rem;
+
+		&:hover {
+			background: #135e96;
+			border-color: #135e96;
+		}
+	}
+}

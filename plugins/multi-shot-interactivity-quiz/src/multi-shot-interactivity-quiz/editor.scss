@@ -1,0 +1,47 @@
+.wp-block-multi-shot-interactivity-quiz-question {
+	padding: 1rem;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+
+	.msiq-answers {
+		margin-top: 1rem;
+	}
+
+	.msiq-answers-label {
+		font-weight: 600;
+		margin: 0 0 0.5rem;
+	}
+
+	.msiq-answer-row {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		margin-bottom: 0.5rem;
+
+		.components-text-control__input {
+			flex: 1;
+		}
+	}
+
+	.msiq-star-toggle {
+		flex-shrink: 0;
+
+		&.is-primary {
+			color: #f0b849;
+		}
+	}
+
+	.msiq-remove-answer {
+		flex-shrink: 0;
+	}
+
+	.msiq-add-answer {
+		margin-top: 0.5rem;
+	}
+
+	.msiq-warning {
+		color: #d63638;
+		font-size: 0.875rem;
+		margin: 0.5rem 0 0;
+	}
+}

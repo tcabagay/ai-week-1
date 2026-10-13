@@ -1,0 +1,13 @@
+{
+  "core": "WordPress/WordPress#7.1.2",
+  "phpVersion": null,
+  "plugins": [
+    "./plugins/one-shot-interactivity-quiz",
+    "./plugins/multi-shot-interactivity-quiz"
+  ],
+  "mappings": {
+    "wp-content/plugins/one-shot-interactivity-quiz": "./plugins/one-shot-interactivity-quiz",
+    "wp-content/plugins/multi-shot-interactivity-quiz": "./plugins/multi-shot-interactivity-quiz"
+  },
+  "testsEnvironment": false
+}

@@ -1,0 +1,31 @@
+{
+	"name": "multi-shot-interactivity-quiz",
+	"version": "0.1.0",
+	"description": "Interactive multiple-choice quiz block using the WordPress Interactivity API.",
+	"author": "The WordPress Contributors",
+	"license": "GPL-2.0-or-later",
+	"main": "build/index.js",
+	"scripts": {
+		"build": "wp-scripts build --webpack-copy-php --blocks-manifest --experimental-modules",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"packages-update": "wp-scripts packages-update",
+		"plugin-zip": "wp-scripts plugin-zip",
+		"start": "wp-scripts start --webpack-copy-php --blocks-manifest --experimental-modules",
+		"test": "wp-scripts test-unit-js",
+		"test:watch": "wp-scripts test-unit-js --watch"
+	},
+	"dependencies": {
+		"@wordpress/block-editor": "latest",
+		"@wordpress/blocks": "latest",
+		"@wordpress/components": "latest",
+		"@wordpress/element": "latest",
+		"@wordpress/i18n": "latest",
+		"@wordpress/interactivity": "latest"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^36.0.0",
+		"vitest": "^5.0.0"
+	}
+}

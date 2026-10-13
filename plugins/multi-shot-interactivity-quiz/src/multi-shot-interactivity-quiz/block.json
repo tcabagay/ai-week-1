@@ -1,0 +1,37 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "multi-shot-interactivity-quiz/question",
+	"version": "0.1.0",
+	"title": "Quiz Question",
+	"category": "widgets",
+	"icon": "forms",
+	"description": "A multiple-choice question block for interactive quizzes using the WordPress Interactivity API.",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"quizId": {
+			"type": "string",
+			"default": "default"
+		},
+		"question": {
+			"type": "string",
+			"default": ""
+		},
+		"answers": {
+			"type": "array",
+			"default": [
+				{ "text": "", "isCorrect": false },
+				{ "text": "", "isCorrect": false }
+			]
+		}
+	},
+	"textdomain": "multi-shot-interactivity-quiz",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"viewScriptModule": "file:./view.js"
+}

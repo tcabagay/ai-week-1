@@ -1,0 +1,46 @@
+/**
+ * Editor styles for the One Shot Interactivity Quiz block.
+ */
+
+.wp-block-create-block-one-shot-interactivity-quiz.quiz-editor {
+	padding: 1.5rem;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	background: #f9f9f9;
+}
+
+.quiz-editor {
+
+	.quiz-question {
+		margin-top: 0;
+		margin-bottom: 1rem;
+		font-size: 1.25rem;
+	}
+
+	.quiz-answers {
+		margin-bottom: 1rem;
+	}
+
+	.quiz-answer-row {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.quiz-answer-input {
+		flex: 1;
+		margin: 0;
+	}
+
+	.quiz-star-toggle {
+
+		&.is-pressed {
+			color: #f0b400;
+		}
+	}
+
+	.quiz-add-answer {
+		margin-top: 0.5rem;
+	}
+}

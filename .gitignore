@@ -1,0 +1,7 @@
+node_modules
+
+plugins/multi-shot-interactivity-quiz/build/*
+plugins/multi-shot-interactivity-quiz/node_modules
+
+plugins/one-shot-interactivity-quiz/build/*
+plugins/one-shot-interactivity-quiz/node_modules
